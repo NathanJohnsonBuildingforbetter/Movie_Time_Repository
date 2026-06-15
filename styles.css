@@ -30,7 +30,16 @@ nav{
     /* justify-content: center; */
     /* margin: 0 auto; */
     width: 100%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     
+    
+}
+
+a{
+    color: white;
+    font-size: 22px;
     
 }
 
@@ -38,7 +47,10 @@ nav{
     display: flex;
     padding: 20px;
     align-items: center;
+    color: #fff;
 }
+
+.nav__link
 
 .nav__logo--img{
     width: 70px;
@@ -55,10 +67,11 @@ Page
 
 */
 #landing--page{
-    display: flex;
+    /* display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: center; */
     width: 100%;
+    position: relative;
 }
 
 #home{
@@ -67,8 +80,85 @@ Page
 }
 
 .landing__page__background--img{
-    height: 50vh;
+    height: 75vh;
     width: 100%;
     z-index: -1;
-    position: relative;
+   
 }
+
+.input--wrapper{
+    display: flex;
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+input{
+    background-color: #fff;
+    border-radius: 20px;
+    border: 1px solid #0a1f44;
+    color: #0a1f44;
+    display: inline-block;
+    height: 70px;
+    line-height: 40px;
+    outline: none;
+    padding: 0 15px;
+    transition: border-color .2s cubic-bezier(.645, .045, .355, 1);
+    width: 100%;
+    font-size: 24px;
+    padding-left: 25px;
+    max-width: 800px;
+}
+
+
+button[data-v-2a11e7ca] {
+    width: 200px;
+    margin-left: 20px;
+    font-size: 40px;
+    color: #fff;
+    border-radius: 20px;
+    transition: all .25s ease;
+    height: 70px;
+}
+button.not-loading[data-v-2a11e7ca] {
+    border: 1px solid yellow;
+    background-color: red;
+    box-shadow: 7px 7px 14px rgba(134, 93, 204, .3);
+    cursor: pointer;
+}
+
+.svg-inline--fa {
+    display: inline-block;
+    font-size: inherit;
+    height: 1em;
+    overflow: visible;
+    vertical-align: -0.125em;
+}
+
+.svg-inline--fa.fa-w-16 {
+    width: 1em;
+}
+
+svg:not(:root).svg-inline--fa {
+    overflow: visible;
+}
+
+
+@media screen and (max-width: 585px) {
+    .input--wrapper{
+    font-size: 16px;
+    height: 90px;
+    padding: 0 0 0 8px;
+    flex-direction: column;
+    }
+
+    .input--wrapper button[data-v-2a11e7ca] {
+        max-width: none !important;
+        width: 100%;
+        margin: 20px 0 0 0;
+    }
+    
+}
+    
