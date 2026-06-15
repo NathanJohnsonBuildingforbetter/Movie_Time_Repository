@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+*{
+    margin: 0; 
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+li{
+    list-style-type: none;
+}
+
+/* Navigation Bar */
+.nav__logo--wrapper{
+    display: flex;
+    align-items: center;
+}
+
+.nav__logo--title{
+padding-left: 30px;
+
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    position: absolute;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    
+    
+}
+
+.nav__links{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+}
+
+.nav__logo--img{
+    width: 70px;
+    height: 70px;
+}
+
+.nav__logo--title{
+    color: #fff;
+}
+/* Landing 
+
+Page 
+
+
+*/
+#landing--page{
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+#home{
+    align-items: center;
+
+}
+
+.landing__page__background--img{
+    height: 50vh;
+    width: 100%;
+    z-index: -1;
+    position: relative;
+}
