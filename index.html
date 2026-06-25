@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=, initial-scale=1.0">
     <title>Movie Time Searches</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/bff019355e.js" crossorigin="anonymous"></script>
     <script src="index.js" defer></script>
 </head>
 <body>
@@ -51,49 +52,76 @@
     <section id="search__section">
         <div class="container">
             <div class="row">
+            <select id="filter" onchange="sortMovies(event)">
+                <option value=""disabled selected>sort</option>
+              <option value="A_to_Z">Title: A to Z</option>
+              <option value="Z_to_A">Title: Z to A</option>
+              <option value="Oldest_To_Newest">Year: Oldest to Newest</option>
+             <option value="Newest_to_Oldest">Year: Newest to Oldest</option>
+          </select>
                 <div class="slider__wrapper">
                     <h4 class="year">Year</h4>
-                    <!-- <div id="slider" class="slider">
-                        <div class="input__range--slider">
-                            <div class="input_range--slider-side-one">
-                            <input id="year-slider-input-0" data-testid="year-slider-input-0" inputmode="numeric" autocomplete="off" role="spinbutton" aria-valuemax="2026" aria-valuemin="1930" aria-valuenow="1930" class="InputRangeSlider-module_sliderInput__SIr5N__v4_0_7 slider-input" type="text" value="1930" style="--shadow-focus-visible: 0px 0px 0px 3px rgba(34, 139, 230, 0.6), 0px 0px 0px 1px #228be6;">
-                            </div>
-                            <div class="InputRangeSlider-module_minusWrapper">
-                                <svg aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none">
-                                    <path fill="var(--icon-default, #475569)" fill-rule="evenodd" d="M4 12a1 1 0 0 1 1-1h14a1 1 0 1 1 0 2H5a1 1 0 0 1-1-1" clip-rule="evenodd"></path>
-                                </svg> 
-                            
-                            </div>
-
-                        </div>
-
-                    </div> -->
+                  
                     <div class="range_container">
-    <div class="sliders_control">
-        <input id="fromSlider" type="range" value="1930" min="1930" max="2026"/>
-        <input id="toSlider" type="range" value="2026" min="0" max="100"/>
-    </div>
-    <div class="form_control">
-        <div class="form_control_container">
-            <div class="form_control_container__time">From Date</div>
-            <input class="form_control_container__time__input" type="number" id="fromInput" value="1930" min="1930" max="2026"/>
-        </div>
-        <div class="form_control_container">
-            <div class="form_control_container__time">To Date</div>
-            <input class="form_control_container__time__input" type="number" id="toInput" value="2026" min="1930" max="2026"/>
-        </div>
-    </div>
-</div>
+                    <div class="sliders_control">
+                        <input id="fromSlider" type="range" value="1930" min="1930" max="2026"/>
+                        <input id="toSlider" type="range" value="2026" min="1930" max="2026"/>
+                    </div>
+                    
+                    <div class="form_control">
+                        <div class="form_control_container">
+                            <div class="form_control_container__time">From Date</div>
+                            <input class="form_control_container__time__input" type="number" id="fromInput" value="1930" min="1930" max="2026"/>
+                        </div>
+                        <div class="form_control_container">
+                            <div class="form_control_container__time">To Date</div>
+                            <input class="form_control_container__time__input" type="number" id="toInput" value="2026" min="1930" max="2026"/>
+                        </div>
+                    </div>
+                </div>
 
                 </div>
-                <div class="image__format">
-                    <img class="movie__poster" src="" alt="">
-                    <div class="movie__title"></div>
-                    <div class="movie__year"></div>
+                <div class="loading__screen">
+                    <H3 class="search__para">Search for any movie in the search bar above and I will show you the movie image, title, and year released of ten of the closest matches!😁😁😊</H3>
+                </div>
+                <div class="movies">
+                    <div class="movie__image--format">
+                        <img class="movie__poster" src="" alt="">
+                        <div class="movie__title">Movie Title:</div>
+                        <div class="movie__year">Year Released:</div>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-    
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="footer__logo--wrapper--with--txt">
+                    <a class="footer__movie-time__link" href="#">
+                        <figure class="footer__logo--wrapper">
+                            <img class="footer__logo--img" src="Assets\Movie Icon Logo.png" alt="">
+                            <h1 class="footer__logo--title">Movie Time</h1>        
+                            
+                        </figure>
+                       <span class="footer__logo--popper">Top
+                        <i class="fas fa-arrow-up"></i>
+                        </span>
+                    </a> 
+                   
+
+                    <h4 class="footer--para">Find the movie worth your while!</h4>
+                </div>
+                <div class="footer__list">
+                    <a href="#" class="footer__link">About</a>
+                    <a class="footer__link no-cursor">Support</a>
+                    <a href="#features" class="footer__link">Terms</a>
+                    <a class="footer__link no-cursor">Privacy</a>
+                </div>
+                 <div class="footer__copyright">Copyright Movie Time &copy; 2026. All rights reserved.</div>
+
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
