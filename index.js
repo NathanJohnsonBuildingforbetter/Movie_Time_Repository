@@ -21,7 +21,7 @@ async function searchForMovie(movieTitleText, filter){
 
     
     const movieTitleValue = movieTitleText
-    const moviesPromises = await fetch(`http://www.omdbapi.com/?i=tt3896198&apikey=56fd1ab8&s=${movieTitleText}`)
+    const moviesPromises = await fetch(`https://www.omdbapi.com/?i=tt3896198&apikey=56fd1ab8&s=${movieTitleText}`)
     console.log(moviesPromises)
     const moviePromisesData = await moviesPromises.json()
     allMovies = moviePromisesData.Search
