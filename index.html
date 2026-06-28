@@ -53,34 +53,35 @@
     <section id="search__section">
         <div class="container">
             <div class="row">
-            <select id="filter" onchange="sortMovies(event)">
-                <option value=""disabled selected>sort</option>
-              <option value="A_to_Z">Title: A to Z</option>
-              <option value="Z_to_A">Title: Z to A</option>
-              <option value="Oldest_To_Newest">Year: Oldest to Newest</option>
-             <option value="Newest_to_Oldest">Year: Newest to Oldest</option>
-          </select>
+            <div class="filter__and__sort">
+                <select id="filter" onchange="sortMovies(event)">
+                    <option value=""disabled selected>sort</option>
+                    <option value="A_to_Z">Title: A to Z</option>
+                    <option value="Z_to_A">Title: Z to A</option>
+                    <option value="Oldest_To_Newest">Year: Oldest to Newest</option>
+                    <option value="Newest_to_Oldest">Year: Newest to Oldest</option>
+                </select>
                 <div class="slider__wrapper">
                     <h4 class="year">Year</h4>
                   
                     <div class="range_container">
-                    <div class="sliders_control">
-                        <input id="fromSlider" type="range" value="1930" min="1930" max="2026"/>
-                        <input id="toSlider" type="range" value="2026" min="1930" max="2026"/>
-                    </div>
+                        <div class="sliders_control">
+                         <input id="fromSlider" type="range" value="1930" min="1930" max="2026"/>
+                         <input id="toSlider" type="range" value="2026" min="1930" max="2026"/>
+                        </div>
                     
-                    <div class="form_control">
-                        <div class="form_control_container">
-                            <div class="form_control_container__time">From Date</div>
-                            <input class="form_control_container__time__input" type="number" id="fromInput" value="1930" min="1930" max="2026"/>
-                        </div>
-                        <div class="form_control_container">
-                            <div class="form_control_container__time">To Date</div>
-                            <input class="form_control_container__time__input" type="number" id="toInput" value="2026" min="1930" max="2026"/>
+                        <div class="form_control">
+                            <div class="form_control_container">
+                                <div class="form_control_container__time">From Date</div>
+                                <input class="form_control_container__time__input" type="number" id="fromInput" value="1930" min="1930" max="2026"/>
+                            </div>
+                            <div class="form_control_container">
+                                 <div class="form_control_container__time">To Date</div>
+                                <input class="form_control_container__time__input" type="number" id="toInput" value="2026" min="1930" max="2026"/>
+                            </div>
                         </div>
                     </div>
-                </div>
-
+                </div>    
                 </div>
                 <div class="loading__screen">
                     <H3 class="search__para">Search for any movie in the search bar above and I will show you the movie image, title, and year released of ten of the closest matches!😁😁😊. (P.s. be sure to click the search icon to get it to work😉😁😁😊) </H3>

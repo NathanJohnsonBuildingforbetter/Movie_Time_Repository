@@ -170,7 +170,8 @@ svg:not(:root).svg-inline--fa {
   display: flex;
   flex-direction: column;
   width: 80%;
-  margin: 10% auto;
+  /* margin: 10% auto; */
+  padding: 30px;
   max-width: 870px;
 }
 
@@ -380,6 +381,19 @@ footer{
     color: brown;
 }
 
+/* For large screens */
+
+@media screen and (max-width:1170px) {
+
+  .range_container{
+
+    margin: 10% auto;
+    
+
+  }
+    
+ }    
+
 /* For small screens tablets and phones */
 
 @media screen and (max-width: 585px) {
@@ -399,3 +413,4 @@ footer{
     }
     
 }
+
